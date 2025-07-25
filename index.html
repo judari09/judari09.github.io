@@ -1,7 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tu Nombre – Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {font-family: 'Inter', sans-serif; margin:0; line-height:1.6; color:#333;}
+    header, section, footer {padding:60px 20px; max-width:800px; margin:0 auto;}
+    header h1 {font-size:2.5rem; margin-bottom:10px;}
+    header p {font-size:1.2rem; color:#555;}
+    .skills, .projects {display:grid; grid-template-columns:1fr 1fr; gap:20px;}
+    .skill-item, .project-item {background:#f9f9f9; padding:20px; border-radius:8px;}
+    a {color:#0066cc; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    footer {text-align:center; font-size:0.9rem; color:#777;}
+    @media(max-width:600px){.skills, .projects {grid-template-columns:1fr;}}
+  </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<header>
+  <h1>Tu Nombre Completo</h1>
+  <p>Full Stack Developer | Web y Mobile</p>
+</header>
+
+<section id="about">
+  <h2>Sobre mí</h2>
+  <p>Soy desarrollador Full Stack con experiencia en frontend (JavaScript, React, Vue), backend (Node.js, Python, PHP), bases de datos y DevOps (AWS, Docker)...</p>
+</section>
+
+<section id="skills">
+  <h2>Habilidades</h2>
+  <div class="skills">
+    <div class="skill-item"><h3>Frontend</h3><p>HTML · CSS · JavaScript · React · Vue</p></div>
+    <div class="skill-item"><h3>Backend</h3><p>Node.js · Python · PHP · Express · Flask · Laravel</p></div>
+    <div class="skill-item"><h3>DevOps</h3><p>AWS · Docker · CI/CD</p></div>
+    <div class="skill-item"><h3>Bases de datos</h3><p>MySQL · MariaDB · DynamoDB</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Proyectos</h2>
+  <div class="projects">
+    <div class="project-item">
+      <h3>PawNotes (Web)</h3>
+      <p>App para llevar el historial médico de mascotas. Tareas, fotos y recordatorios.</p>
+      <a href="#">Ver App</a>
+    </div>
+    <div class="project-item">
+      <h3>IoT App (iOS)</h3>
+      <p>Proyecto con Raspberry Pi + AWS para detección de movimiento y streaming de vídeo al móvil.</p>
+    </div>
+    <div class="project-item">
+      <h3>CarTrack</h3>
+      <p>Registro completo del mantenimiento vehicular con alertas y log de servicios.</p>
+      <a href="#">Ver App</a>
+    </div>
+    <div class="project-item">
+      <h3>PawNotes (iOS)</h3>
+      <p>Versión móvil de PawNotes para iOS, con tareas y registro de salud.</p>
+      <a href="#">Ver App</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contacto</h2>
+  <p>¿Te interesa colaborar o contratarme? Contáctame por <a href="mailto:tucorreo@example.com">correo</a> o conéctate en <a href="#">LinkedIn</a>.</p>
+</section>
+
+<footer>
+  <p>© 2025 Tu Nombre. Inspirado en el sitio de Bryan Mendieta.</p>
+</footer>
+
 </body>
 </html>
