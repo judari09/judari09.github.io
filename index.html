@@ -4,75 +4,98 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Tu Nombre – Full Stack Developer</title>
+  
+  <!-- Fuente Inter desde Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-    body {font-family: 'Inter', sans-serif; margin:0; line-height:1.6; color:#333;}
-    header, section, footer {padding:60px 20px; max-width:800px; margin:0 auto;}
-    header h1 {font-size:2.5rem; margin-bottom:10px;}
-    header p {font-size:1.2rem; color:#555;}
-    .skills, .projects {display:grid; grid-template-columns:1fr 1fr; gap:20px;}
-    .skill-item, .project-item {background:#f9f9f9; padding:20px; border-radius:8px;}
-    a {color:#0066cc; text-decoration:none;}
-    a:hover {text-decoration:underline;}
-    footer {text-align:center; font-size:0.9rem; color:#777;}
-    @media(max-width:600px){.skills, .projects {grid-template-columns:1fr;}}
-  </style>
+  
+  <!-- Archivo de estilos externos -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header>
-  <h1>Tu Nombre Completo</h1>
-  <p>Full Stack Developer | Web y Mobile</p>
+  <header>
+  <div class="header-container">
+    <img src="foto_perfil.jpeg" alt="Foto de perfil" class="avatar" />
+    <div class="header-text">
+      <h1>Juan David Rivaldo Diaz Sierra</h1>
+      <p>Electronic Engineer | AI, Computer Vision and Machine Learning</p>
+    </div>
+  </div>
 </header>
 
-<section id="about">
-  <h2>Sobre mí</h2>
-  <p>Soy desarrollador Full Stack con experiencia en frontend (JavaScript, React, Vue), backend (Node.js, Python, PHP), bases de datos y DevOps (AWS, Docker)...</p>
-</section>
+  <section id="about">
+    <h2>About me</h2>
+    <p>
+      I´m Electronic engineer with a strong passion for programming, artificial intelligence, computer vision, and machine learning. I thrive in dynamic environments, bringing adaptability, leadership, and a collaborative mindset. I’m constantly seeking to grow, learn, and apply my skills to develop innovative and impactful solutions.
+    </p>
+  </section>
 
-<section id="skills">
-  <h2>Habilidades</h2>
-  <div class="skills">
-    <div class="skill-item"><h3>Frontend</h3><p>HTML · CSS · JavaScript · React · Vue</p></div>
-    <div class="skill-item"><h3>Backend</h3><p>Node.js · Python · PHP · Express · Flask · Laravel</p></div>
-    <div class="skill-item"><h3>DevOps</h3><p>AWS · Docker · CI/CD</p></div>
-    <div class="skill-item"><h3>Bases de datos</h3><p>MySQL · MariaDB · DynamoDB</p></div>
+  <section id="skills">
+    <h2>Skill Set</h2>
+    <div class="skills">
+      <div class="skill-item">
+        <h3>Programming Languages</h3>
+        <p>Python · Java · C++</p>
+      </div>
+      <div class="skill-item">
+        <h3>Frameworks</h3>
+        <p>TensorFlow  ·  FastAPI  ·  YOLO · Scikit-Learn · Flet · OpenCV · MediaPipe</p>
+      </div>
+      <div class="skill-item">
+        <h3>Databases</h3>
+        <p>MySQL  ·  SQLite  ·  MongoDB</p>
+      </div>
+      <div class="skill-item">
+        <h3>Design and Analysis Tools</h3>
+        <p>MATLAB  ·  Proteus  ·  Eagle PCB Design Software  ·  Arduino  ·  SolidWorks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Creations</h2>
+    <div class="projects">
+      <div class="project-item">
+        <h3>WorkAware</h3>
+        <p>Multiplatform desktop application developed in Python with Flet, aimed at managing tasks and monitoring posture in real time. It includes a modern and responsive interface, notifications, audible alerts, and ensures data persistence using SQLite and SQLAlchemy.</p>
+        <img src="workaware_screen.png" alt="workaware screen" width="400" />
+        <a href="https://github.com/judari09/WorkAware">GitHub</a>
+      </div>
+      <div class="project-item">
+        <h3>SCARA Robot</h3>
+        <p>Design, prototyping, and validation of a SCARA-type serial robot for pick-and-place tasks. Built with Arduino-based control and a graphical interface, this system was presented at the 2024 University Research Week (SIU) as part of the degree project.</p>
+        <img src="scara.jpg" alt="robot SCARA" width="400" />
+        <a href="https://github.com/judari09/scara">GitHub</a>
+      </div>
+      <div class="project-item">
+        <h3>Game Body</h3>
+        <p>Gesture-based control system using Python, MediaPipe, and OpenCV to detect body and hand movements. These movements are translated into keyboard inputs to interact with classic video games like Super Mario Bros, Megaman, and Street Fighter.</p>
+        <img src="gamebody.png" alt="game body" width="400" />
+        <a href="https://github.com/judari09/gamebody">GitHub</a>
+      </div>
+     
+    </div>
+  </section>
+
+  <section id="contact">
+  <h2>Contact</h2>
+  <hr>
+  <div class="contact-icons">
+    <a href="https://www.linkedin.com/in/juan-david-rivaldo-diaz-sierra-72aa99222/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="icon">
+      <p>LinkedIn</p>
+    </a>
+    <a href="mailto:juandavidrivaldo1@gmail.com">
+      <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email" class="icon">
+      <p>Email</p>
+    </a>
   </div>
 </section>
 
-<section id="projects">
-  <h2>Proyectos</h2>
-  <div class="projects">
-    <div class="project-item">
-      <h3>PawNotes (Web)</h3>
-      <p>App para llevar el historial médico de mascotas. Tareas, fotos y recordatorios.</p>
-      <a href="#">Ver App</a>
-    </div>
-    <div class="project-item">
-      <h3>IoT App (iOS)</h3>
-      <p>Proyecto con Raspberry Pi + AWS para detección de movimiento y streaming de vídeo al móvil.</p>
-    </div>
-    <div class="project-item">
-      <h3>CarTrack</h3>
-      <p>Registro completo del mantenimiento vehicular con alertas y log de servicios.</p>
-      <a href="#">Ver App</a>
-    </div>
-    <div class="project-item">
-      <h3>PawNotes (iOS)</h3>
-      <p>Versión móvil de PawNotes para iOS, con tareas y registro de salud.</p>
-      <a href="#">Ver App</a>
-    </div>
-  </div>
-</section>
 
-<section id="contact">
-  <h2>Contacto</h2>
-  <p>¿Te interesa colaborar o contratarme? Contáctame por <a href="mailto:tucorreo@example.com">correo</a> o conéctate en <a href="#">LinkedIn</a>.</p>
-</section>
-
-<footer>
-  <p>© 2025 Tu Nombre. Inspirado en el sitio de Bryan Mendieta.</p>
-</footer>
+  <footer>
+    <p>© 2025 Juan David Rivaldo Diaz Sierra.</p>
+  </footer>
 
 </body>
 </html>

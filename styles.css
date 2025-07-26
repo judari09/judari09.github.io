@@ -1,0 +1,172 @@
+/* Fuente principal */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #D7CCC8;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* espacio entre avatar y texto */
+  flex-wrap: wrap;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* lo hace circular */
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.header-text {
+  max-width: 600px;
+}
+
+/* Contenedores principales */
+header, section, footer {
+  padding: 10px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Encabezado */
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Títulos de secciones */
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+/* Diseño en cuadrícula para habilidades y proyectos */
+.skills, .projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+/* Estilos de tarjetas */
+.skill-item, .project-item {
+  text-align: center;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease;
+}
+
+.skill-item:hover, .project-item:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Enlaces */
+a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Pie de página */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+/* Responsive para móviles */
+@media (max-width: 600px) {
+  .skills, .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+.projects {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.project-item {
+  flex: 1 1 300px; /* que se adapten al ancho pero tengan tamaño mínimo */
+  max-width: 400px;
+  min-height: 600px; /* fuerza el mismo alto */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  text-align: justify;
+}
+.project-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+.project-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0px;
+}
+
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#contact h2 {
+  font-size: 2em;
+  color: #1c2a4d;
+  margin-bottom: 10px;
+}
+
+#contact hr {
+  width: 90%;
+  margin: 0 auto 30px;
+  border: 0.5px solid #ccc;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.contact-icons a {
+  text-decoration: none;
+  color: #1c2a4d;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-icons .icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icons a:hover .icon {
+  transform: scale(1.1);
+}
